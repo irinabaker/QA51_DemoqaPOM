@@ -60,22 +60,12 @@ public class MyListener implements WebDriverListener {
     }
 
     @Override
-    public void afterExecuteScript(WebDriver driver, String script, Object[] args, Object result) {
-       logger.info("Script {} executed with arguments {}",result.toString(),script.toString());
-    }
-
-    @Override
-    public void beforeClick(WebElement element) {
-        logger.info("We have to click on element {}", element.toString());
-    }
-
-    @Override
     public void afterClick(WebElement element) {
         logger.info("We clicked on element {}",element.toString());
     }
 
     @Override
     public void afterSendKeys(WebElement element, CharSequence... keysToSend) {
-        logger.info("We sendKeys to element {}",element);
+        logger.info("We sendKeys to element {}",element.toString());
     }
 }

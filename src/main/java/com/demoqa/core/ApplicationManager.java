@@ -1,8 +1,6 @@
 package com.demoqa.core;
 
 import com.demoqa.utils.MyListener;
-import com.demoqa.utils.MyWatcher;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;

@@ -20,6 +20,7 @@ public class LoginTests extends TestBase {
     @Test
     @DisplayName("Check to - 'User name neuer' is displayed")
     public void loginPositiveTest() {
+        logger.info("I log in with userName - {} and password - {}", UserData.user, UserData.password);
         new LoginPage(driver).enterUserData(UserData.user, UserData.password)
                 .clickOnLoginButton()
                 .verifyUserName(UserData.user);
